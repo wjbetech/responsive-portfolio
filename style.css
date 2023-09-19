@@ -182,7 +182,7 @@ header {
     color: var(--text-light);
 }
 
-.scroll-top {
+a .scroll-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -195,11 +195,14 @@ header {
     padding: 8px 10px 5px 20px;
     border-radius: 6px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out;
     
 }
 
-.scroll-top:hover {
+a .scroll-top:hover {
+    transition: all 0.5s ease-in-out;
     border: 2px solid var(--text-light);
+    box-shadow: none;
 }
 
 
