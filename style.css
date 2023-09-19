@@ -1,0 +1,208 @@
+:root {
+
+    /* base colors */
+    --text-light: #f8fcfb;
+    --text-dark: #233142;
+
+    --grey--light: #E0E0E0;
+    --grey-medium: #A8A8A8;
+    --grey-dark: #585858;
+    --grey-v-dark: #282828;
+
+
+    /* accent colors */
+    --azure: #0CAFFF;
+    --blue-light: #6699CC;
+    --blue-dark: #5072A7;
+    --red-light: #fd5c63;
+    --red-dark: #BA0021;
+    --green-light: #ACE1AF;
+    --green-dark: #228B22;
+    
+    /* box-shadow */
+    --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--grey-dark);
+    color: var(--text-light);
+    font-weight: 200;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    color: var(--text-light);
+
+    & #particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    }
+
+    & .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        height: 100vh;
+
+        & h1 {
+            font-size: 4rem;
+            font-weight: 200;
+        }
+
+        & h3 {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--azure);
+        }
+
+        & .scroll {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            color: var(--text-light);
+            font-size: 30px;
+        }
+    }
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#about, #skills {
+    padding: 40px;
+    max-width: 868px;
+    margin: 0 auto 100px auto;
+
+    & .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        & h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: var(--text-light);
+            border: 2px solid transparent;
+            padding: 10px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        & a:hover {
+            border-color: var(--grey--light);
+            box-shadow: none;
+        }
+    }
+
+    & .card {
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        display: flex;
+        gap: 50px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+        line-height: 1.5;
+    }
+
+    & .card:hover {
+        border-color: var(--grey--light);
+        box-shadow: none;
+    }
+}
+
+#about .card-img {
+    width: 30%;
+    max-width: 200px;
+    height: 50%;
+    max-height: 125px;
+    margin: auto;
+}
+
+#about .info h1, #skills .info h1 {
+
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: var(--azure);
+
+    & p {
+        font-size: 1rem;
+    }
+}
+
+#about .info a, #skills .info a {
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+#skills .skill-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+    gap: 20px;
+}
+
+.icons {
+    padding: 0 0 15px 0;
+    color: var(--text-light);
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--grey-dark);
+    color: var(--text-light);
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 10px 5px 20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.scroll-top:hover {
+    border: 2px solid var(--text-light);
+}
+
+
+.italicize {
+    font-style: italic;
+}

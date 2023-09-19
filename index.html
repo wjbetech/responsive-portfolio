@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio | @wjbetech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>@wjbetech</h1>
+            <h3>Software Engineer and React Enthusiast</h3>
+            <a href="#about" class="scroll">
+                <i class='bx bxs-chevrons-down'></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="header">
+            <h1>About</h1>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="./assets/logo.png" alt="">
+            <div class="info">
+                <h1>William</h1>
+                <p>31 year old native British guy living and coding in Seoul, Korea.</p>
+                <br>
+                <p>Happily married and residing on an F6 visa, actively looking for work on both frontend and fullstack projects with a focus on React and the MERN stack.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="header">
+            <h1>Skills</h1>
+            <a href="#">See More</a>
+        </div>
+        <div class="skill-cards">
+            <div class="card">
+                <div class="info">
+                    <div class="icons">
+                        <a href="#">
+                            <i class='bx bx-md bxl-react' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bx-md bxl-tailwind-css'></i>
+                        </a>
+                        <a href="">
+                            <i class='bx bx-md bxl-bootstrap' ></i>
+                        </a>
+                    </div>
+                    <h1>Modern Design</h1>
+                    <p>Experience building modern, eye-catching websites using technologies such as Tailwind CSS and Bootstrap within React.
+                    </p>
+                    <br>
+                    <p>Projects showcase a range of skills, familiarity with contemporary design philosophies, and passion for building truly great looking apps that people <span class="italicize">want</span> to use.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="icons">
+                        <i class='bx bx-md bx-message-rounded'></i>
+                    </div>
+                    <h1>Unopinionated, Strong Communication</h1>
+                    <p>Friendly, professional and passionate - I have no troubles adapting to and getting stuck in to projects with people from all backgrounds and interests.</p>
+                    <br>
+                    <p>With previous experience living in Japan and Korea, and strong fluency in Korean after living here here since 2016 and pursuing a Master's in Korean at Seoul National University, easy communiaction comes naturally.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="icons">
+                        <i class='bx bx-md bx-coin-stack'></i>
+                        <a href="#">
+                            <i class='bx bx-md bxl-mongodb' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bx-md bxl-heroku'></i>
+                        </a>
+                    </div>
+                    <h1>Full-stack Capabilities</h1>
+                    <p>Several projects demonstrate knowledge of full stack technologies, heavily leaning into the MERN stack or use of Next.js.
+                    </p>
+                    <br>
+                    <p>Experience hosting projects and websites on platforms such as Heroku and Vercel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button href="#" class="scroll-top" onClick="scrollToTop()">
+        Return
+        <i class='bx bx-md bx-chevrons-up' ></i>
+    </button>
+
+
+
+
+
+
+    <!-- import JS -->
+    <script src="/script.js"></script>
+    <!-- import particlejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.0.0/particles.min.js"></script>
+</body>
+</html>
