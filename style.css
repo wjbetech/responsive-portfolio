@@ -34,7 +34,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--grey-dark);
+    background-color: var(--blue-dark);
     color: var(--text-light);
     font-weight: 200;
 }
